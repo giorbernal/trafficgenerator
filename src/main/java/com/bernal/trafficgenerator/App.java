@@ -28,8 +28,7 @@ public class App
 	    	TrafficPattern pattern = gson.fromJson(jsonReader, TrafficPattern.class);
 	    	pattern.validate();
 	    	
-			CsvWriter writer = new CsvWr
-			iter();
+			CsvWriter writer = new CsvWriter();
 	    	for (Profile profile : pattern.getProfiles()) {
 	    		for (int i=0; i<profile.getNumberOfElements(); i++) {
 	    			handleElement(profile.getName() + "_" + i, profile, pattern.getTime(), writer);
