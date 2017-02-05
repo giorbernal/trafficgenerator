@@ -1,0 +1,54 @@
+{
+    "organizations": [
+        "org_test",
+        "smip"
+    ],
+    "msgTypes": [
+        "ACC",
+        "RESP",
+        "DATA"
+    ],
+    "models": [
+        "G24",
+        "Wavecom"
+    ],
+    "time": {
+        "init": 1450540333,
+        "end": 1451145133
+    },
+    "profiles": [
+        {
+            "name": "acc_test_madrid",
+            "numberOfElements": 5000,
+            "type": "ACC",
+            "organization": "org_test",
+            "model": "G24",
+            "location": "Madrid",
+            "mean": 86400,
+            "stdev": 1500,
+            "sessionTime": true
+        },
+        {
+            "name": "acc_test_sevilla",
+            "numberOfElements": 5000,
+            "type": "ACC",
+            "organization": "org_test",
+            "model": "G24",
+            "location": "Sevilla",
+            "mean": 86400,
+            "stdev": 1500,
+            "sessionTime": true
+        },
+        {
+            "name": "acc_smip",
+            "numberOfElements": 75000,
+            "type": "ACC",
+            "organization": "smip",
+            "model": "Wavecom",
+            "location": "London",
+            "mean": 86400,
+            "stdev": 15000,
+            "sessionTime": true
+        }        
+    ]
+}
